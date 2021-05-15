@@ -1,5 +1,8 @@
 package hendev.twoFaceCarrier.business.abstracts;
 
-public interface EmployerService {
+import hendev.twoFaceCarrier.entites.concretes.Employer;
 
+public interface EmployerService {
+	Employer assignUserAsEmployer(Employer employer);
+	boolean removeAssigmentOfEmployer(Employer employer);
 }
