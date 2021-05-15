@@ -2,12 +2,14 @@ package hendev.twoFaceCarrier.entites.concretes;
 
 import java.util.Date;
 import javax.persistence.*;
+
+import hendev.twoFaceCarrier.entites.abstracts.IEntity;
 import lombok.Data;
 
 @Data
 @Entity
 @Table(name="Members")
-public class Member{
+public class Member implements IEntity{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

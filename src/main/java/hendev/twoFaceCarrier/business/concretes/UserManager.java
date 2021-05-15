@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import hendev.twoFaceCarrier.business.abstracts.UserService;
 import hendev.twoFaceCarrier.dataAccess.abstracts.UserDao;
 import hendev.twoFaceCarrier.entites.concretes.User;
-import net.bytebuddy.asm.Advice.This;
 
 @Service
 public class UserManager implements UserService{
